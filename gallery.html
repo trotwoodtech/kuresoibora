@@ -9,36 +9,37 @@
 <meta property="og:description" content="Photos and community activities from Kuresoi Bora Initiative in Kuresoi South.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.kuresoibora.org/gallery.html">
-<meta name="theme-color" content="#0E3B2B">
+<meta name="theme-color" content="#0A3324">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,750;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="46" height="46"><span><b>Kuresoi Bora Initiative</b><small>Better Livelihoods. Better Future.</small></span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#dominic">Meet Dominic</a></li>
-      <li><a href="index.html#plan">The plan</a></li>
-      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
-      <li><a class="btn btn-sun" href="contact.html">Contact us</a></li>
-    </ul>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span><b>Kuresoi Bora Initiative</b><small>Better Livelihoods. Better Future.</small></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dominic">Meet Dominic</a></li>
+        <li><a href="index.html#plan">The plan</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a class="btn" href="contact.html">Get in touch</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 <main id="main">
 <section class="page-head"><div class="wrap">
   <h1>Gallery and community activities</h1>
-  <p>Moments from the wards: meetings, farm visits, school and health activities, and what is coming next.</p>
+  <p>Moments from the wards: meetings, farm visits, school and health activities.</p>
 </div></section>
 <section class="section">
   <div class="wrap">
-    <h2>Photos</h2>
     <div class="filters" role="group" aria-label="Filter photos">
       <button type="button" data-cat="All" aria-pressed="true">All</button>
       <button type="button" data-cat="Agriculture" aria-pressed="false">Agriculture</button>
@@ -47,12 +48,16 @@
       <button type="button" data-cat="Community" aria-pressed="false">Community</button>
     </div>
     <div class="grid" id="gallery-grid"></div>
+    <div class="empty" id="gallery-empty" hidden>
+      <h2>Photos are on the way</h2>
+      <p>We are gathering pictures from our community activities. Check back soon, or send us your own moments from the wards.</p>
+      <a class="btn btn-dark" href="contact.html">Get in touch</a>
+    </div>
   </div>
 </section>
-<section class="section bg-mist">
+<section class="section" id="events-section" style="padding-top:0">
   <div class="wrap">
     <h2>Activities</h2>
-    <p>Dates will be confirmed with partners and announced here.</p>
     <div class="events" id="events-list"></div>
   </div>
 </section>
@@ -64,8 +69,8 @@
 <footer class="site-footer">
   <div class="wrap foot">
     <div>
-      <p><b style="font-family:var(--head);font-size:1.2rem;color:#fff">Kuresoi Bora Initiative</b></p>
-      <p>A community organisation working with residents, government and partners for better livelihoods in Kuresoi South and beyond.</p>
+      <p><b style="font-size:1.25rem;color:#fff;letter-spacing:-.02em">Kuresoi Bora Initiative</b></p>
+      <p>Working with residents, government and partners for better livelihoods in Kuresoi South.</p>
     </div>
     <div>
       <h4>Explore</h4>
