@@ -9,49 +9,51 @@
 <meta property="og:description" content="Send feedback, volunteer or partner with Kuresoi Bora Initiative.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.kuresoibora.org/contact.html">
-<meta name="theme-color" content="#0E3B2B">
+<meta name="theme-color" content="#0A3324">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,750;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="46" height="46"><span><b>Kuresoi Bora Initiative</b><small>Better Livelihoods. Better Future.</small></span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#dominic">Meet Dominic</a></li>
-      <li><a href="index.html#plan">The plan</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a class="btn btn-sun" href="contact.html" aria-current="page">Contact us</a></li>
-    </ul>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span><b>Kuresoi Bora Initiative</b><small>Better Livelihoods. Better Future.</small></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dominic">Meet Dominic</a></li>
+        <li><a href="index.html#plan">The plan</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="btn" href="contact.html" aria-current="page">Get in touch</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 <main id="main">
 <section class="page-head"><div class="wrap">
-  <h1>Contact us and give feedback</h1>
-  <p>We want to hear from you: ideas, concerns, offers of help and questions are all welcome.</p>
+  <h1>Talk to us. We are listening.</h1>
+  <p>Ideas, concerns, offers of help and questions are all welcome.</p>
 </div></section>
 <section class="section">
   <div class="wrap contact">
     <form class="form" id="contact-form" novalidate>
-      <h2 id="form" style="font-size:1.7rem">Send a message</h2>
+      <h2 id="form">Send a message</h2>
       <fieldset class="field"><legend>I am sending</legend><div class="chips"><label class="chip"><input type="radio" name="type" value="Feedback" checked><span>Feedback</span></label><label class="chip"><input type="radio" name="type" value="Suggestion" ><span>Suggestion</span></label><label class="chip"><input type="radio" name="type" value="Question" ><span>Question</span></label><label class="chip"><input type="radio" name="type" value="Volunteer" ><span>Volunteer</span></label><label class="chip"><input type="radio" name="type" value="Partnership" ><span>Partnership</span></label></div></fieldset>
       <div class="two">
         <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="contact">Phone or email</label><input type="text" id="contact" name="contact" autocomplete="off"><small>Optional, but needed if you want a reply.</small></div>
+        <div class="field"><label for="contact">Phone or email</label><input type="text" id="contact" name="contact" autocomplete="off"><small>Needed only if you want a reply.</small></div>
       </div>
       <div class="two">
-        <div class="field"><label for="ward">Your ward</label><select id="ward" name="ward"><option value="">Select</option><option>Amalo</option><option>Keringet</option><option>Kiptagich</option><option>Tinet</option><option>Kuresoi North</option><option>Other</option></select></div>
+        <div class="field"><label for="ward">Your ward</label><select id="ward" name="ward"><option value="">Select</option><option>Amalo</option><option>Keringet</option><option>Kiptagich</option><option>Tinet</option><option>Other</option></select></div>
         <div class="field"><label for="topic">Topic</label><select id="topic" name="topic"><option value="">Select</option><option>Agriculture</option><option>Education</option><option>Healthcare</option><option>Infrastructure</option><option>Good governance</option><option>Youth and women</option><option>Something else</option></select></div>
       </div>
       <div class="field"><label for="message">Your message</label><textarea id="message" name="message" required></textarea></div>
       <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
-      <div class="field check"><input type="checkbox" id="consent" name="consent" value="yes" required><label for="consent" style="font:400 .97rem var(--body);margin:0">I agree that Kuresoi Bora Initiative may use my message and contact details to respond and to improve its work. My details will not be shared publicly.</label></div>
+      <div class="field check"><input type="checkbox" id="consent" name="consent" value="yes" required><label for="consent">I agree that Kuresoi Bora Initiative may use my message and contact details to respond and to improve its work. My details will not be shared publicly.</label></div>
       <button class="btn btn-dark" type="submit">Send message</button>
       <p class="status-msg" id="form-status" role="status" aria-live="polite"></p>
     </form>
@@ -61,16 +63,15 @@
         <ul>
           <li><a data-kbi="email" href="#">Email</a></li>
           <li><a data-kbi="phone" href="#">Phone</a></li>
-          <li><a class="btn btn-sun wa" data-kbi="whatsappNumber" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+          <li><a class="btn btn-sun" data-kbi="whatsappNumber" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
           <li><a data-kbi="whatsappGroupLink" href="#" target="_blank" rel="noopener">Join our WhatsApp community</a></li>
           <li><a data-kbi="facebook" href="#" target="_blank" rel="noopener">Follow us on Facebook</a></li>
         </ul>
       </div>
       <h3>Common questions</h3>
-      <details><summary>What does the Initiative do?</summary><p>We work with residents, government and other organisations to improve farming, education, health, infrastructure, governance and opportunities for youth and women in Kuresoi South.</p></details>
-      <details><summary>How is my feedback used?</summary><p>Feedback helps us decide where to focus, what to raise with government and partners, and how to improve. We aim to summarise what we hear and share what we do about it.</p></details>
+      <details><summary>What does the Initiative do?</summary><p>We work with residents, government and other organisations to improve farming, education, health, infrastructure, governance and opportunities for youth and women.</p></details>
+      <details><summary>How is my feedback used?</summary><p>Feedback helps us decide where to focus, what to raise with government and partners, and how to improve.</p></details>
       <details><summary>How can I volunteer?</summary><p>Choose Volunteer in the form and tell us your ward and skills. We will contact you when activities are being organised.</p></details>
-      <details><summary>Do you only work in Kuresoi South?</summary><p>Our focus is Kuresoi South. Many challenges are shared with Kuresoi North, and we aim to work there too as we grow.</p></details>
     </aside>
   </div>
 </section>
@@ -78,8 +79,8 @@
 <footer class="site-footer">
   <div class="wrap foot">
     <div>
-      <p><b style="font-family:var(--head);font-size:1.2rem;color:#fff">Kuresoi Bora Initiative</b></p>
-      <p>A community organisation working with residents, government and partners for better livelihoods in Kuresoi South and beyond.</p>
+      <p><b style="font-size:1.25rem;color:#fff;letter-spacing:-.02em">Kuresoi Bora Initiative</b></p>
+      <p>Working with residents, government and partners for better livelihoods in Kuresoi South.</p>
     </div>
     <div>
       <h4>Explore</h4>
